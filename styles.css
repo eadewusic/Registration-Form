@@ -1,5 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-size: 16px;
+}
+section {
+    max-width: 100%;
+    width: 50%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* made the content be at the middle */
+    background: url(./Images/bg-intro-desktop.png) no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+    padding: 0 160px;
+}
+.learn {
+    color: #ffffff;
+    padding-right: 30px;
+}
+h1 {
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.learn p {
+    color: rgba(255, 255, 255, .755);
+    line-height: 25px;
+    font-weight: 400;
+}
+.cta {
+    background-color: hsl(248, 32%, 49%);
+    color: rgba(255, 255, 255, 0.755);
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 400;
+    box-shadow: 0 .5em 0 rgba(0, 0, 0, .131);
+}
+.cta span {
+    font-weight: 600;
+    color: #ffffff;
+}
+.sign-up {
+    background-color: #ffffff;
+    margin-top: 1.5em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 .5em 0 rgb(0, 0, 0, .124);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+}
+input {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    color: hsl(249, 10%, 26%);
+    font-weight: 700;
+    position: relative;
+}
+.form-btn {
+    width: 100%;
+}
+textarea:focus, input:focus {
+    outline: none;
+    border-color: hsl(249, 10%, 26%);
+    color: hsl(249, 10%, 26%);
+}
+
+#submit-btn {
+    background-color: hsl(154, 59%, 51%);
+    color: #ffffff;
+    border: none;
+    padding: 1em 0;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0 0.2em 0 rgb(46, 167, 114);
+}
+#submit-btn:hover {
+    cursor: pointer;
+    background-color: rgb(58, 192, 134, .755);
+}
+.terms {
+    color: hsl(246, 25%, 77%);
+    font-size: .75em;
+    padding: 1em 1em 0;
+}
+.terms a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 700;
+}
+.icon {
+    position: absolute; /* made the icon be by the right hand side of the form outside the form-btn */
+    margin: .8em 0 0 -3em; /* the icon entered inside */
+    opacity: 0;
+}
+.msg {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    padding: .5em 0 0 0;
+    text-align: end; /* made the text underneath form-btn be at the end */
+    display: none;
+}
+/* .msg, .icon {
+    display: none;
+} */
+
+@media(max-width: 992px) {
+    main {
+        padding: 40px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(./Images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+    }
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .learn {
+        text-align: center;
+        padding: 40px 0 60px;
+    }
+    form p {
+        text-align: center;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    .cta {
+        padding: 15px 60px;
+        line-height: 1.5rem;
+    }
 }
