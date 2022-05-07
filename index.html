@@ -6,23 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
 
-        <!--- BootStrap Link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-        <!--- My CSS Link-->
+    <!--- My CSS Link-->
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-    <div class="container">
+    <main>
+        <section class="learn">
+           <h1>Learn to code by<br>watching others</h1>
+           <p>See how experienced developers solve problems in real-time. <br> Watching scripted tutorials is great, but understanding how <br> developers think is invaluable.</p>  
+        </section>
 
-        <div class="textbox content pt-5">
-            <h2>Learn to code by<br>watching others</h2>
-            <p>See how experienced developers solve problems in real-<br> time. Watching scripted tutorials is great, but<br> understanding how developers think is invaluable.</p>
-        </div>
+        <section>
+            <div class="cta">
+                <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+            </div>
+
+            
+    <div class="sign-up">
+        <form action="post" class="signup-form" data-netlify="true">
+            <div class="form-btn">
+                <input type="text" placeholder="First Name" required>
+                <img class="icon" src="./Images/icon-error.svg" alt="Error">
+                <p class="msg">First Name cannot be empty</p>
+            </div>
+
+            <div class="form-btn">
+                <input type="text" placeholder="Last Name" required>
+                <img class="icon" src="./Images/icon-error.svg" alt="Error">
+                <p class="msg">Last Name cannot be empty</p>
+            </div>
+
+            <div class="form-btn">
+                <input type="email" placeholder="Email Address" required>
+                <img class="icon" src="./Images/icon-error.svg" alt="Error">
+                <p class="msg">Looks like this is not an email</p>
+            </div>
+
+            <div class="form-btn">
+                <input type="password" placeholder="Password" required>
+                <img class="icon" src="./Images/icon-error.svg" alt="Error">
+                <p class="msg">Password cannot be empty</p>
+            </div>
+
+            <input id="submit-btn" type="button" value="claim your free trial" id="btn">
+
+            <p class="terms">By clicking the button, you are agreeing to our <span><a href="#">Terms and Services</a></span></p>
+        </form>
+        </section>
+    </main>
     
-
-        <!--- Bootstrap JS Link-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
