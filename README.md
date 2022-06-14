@@ -1,5 +1,7 @@
 # Sign Up Page
- Using Pure HTML, CSS and this CSS framework; Bootstrap, I built this Intro component with sign up form solution
+ Using Pure HTML, CSS and Media Queries for its responsiveness. I built this Intro component with sign up form solution
+ 
+ It is both Desktop and Mobile Responsive
  
  Check it out here ---> https://my-signup-page.netlify.app
  
