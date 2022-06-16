@@ -1,5 +1,5 @@
 # Sign Up Page
- Using Pure HTML, CSS and Media Queries for its responsiveness. I built this Intro component with sign up form solution
+ Using Pure HTML, CSS and Media Queries for its responsiveness. I built this Intro component with registration form solution
  
  It is both Desktop and Mobile Responsive
  
